@@ -3,8 +3,8 @@ import axios from 'axios';
 
 import './App.css';
 
-import List from './Components/ListComponent/ListComponent';
-import Navbar from './Components/NavbarComponent/NavbarComponent';
+import List from './Components/List/List';
+import Navbar from './Components/Navbar/Navbar';
 
 function App() {
   const statusList = ['Backlog', 'Todo', 'In progress', 'Done', 'Cancelled'];
@@ -19,7 +19,7 @@ function App() {
   const [groupValue, setgroupValue] = useState(getStateFromLocalStorage() || 'status');
   const [orderValue, setorderValue] = useState('title');
   const [ticketDetails, setticketDetails] = useState([]);
-  const [userList, setUserList] = useState([]); // State for user list
+  const [userList, setUserList] = useState([]); 
 
   const orderDataByValue = useCallback(async (cardsArry) => {
     if (orderValue === 'priority') {
@@ -84,7 +84,7 @@ function App() {
                 orderDataByValue(ticketArray);
 
                 const users = response.data.users.map(user => user.name); 
-                setUserList(users); // Set the user list state
+                setUserList(users); 
             }
         } 
         catch (error) {
@@ -131,7 +131,7 @@ function App() {
             'user': <>
               {userList.map((listItem) => (
                 <List
-                  key={listItem} // Add a key for each item
+                  key={listItem}
                   groupValue='user'
                   orderValue={orderValue}
                   listTitle={listItem}
@@ -144,7 +144,7 @@ function App() {
             'priority': <>
               {priorityList.map((listItem) => (
                 <List
-                  key={listItem.priority} // Add a key for each item
+                  key={listItem.priority} 
                   groupValue='priority'
                   orderValue={orderValue}
                   listTitle={listItem.priority}

@@ -1,6 +1,6 @@
-# [Quicksell Frontend Assignment](https://quicksell-assignment-zeta-self.vercel.app/)
+# [Quicksell Frontend Assignment](https://quick-sell-oa-ce21b016-f00y6q46u-anshulagrawal45s-projects.vercel.app/)
 
-This React JS application interacts with the API available at [https://api.quicksell.co/v1/internal/frontend-assignment](https://api.quicksell.co/v1/internal/frontend-assignment). It allows users to adjust the Kanban board dynamically based on their grouping and sorting preferences. Tickets can be grouped by status, user, or priority, and sorted by priority or title. The application also ensures that the user's view state is preserved even after a page refresh.
+This React JS application interacts with the API available at [https://api.quicksell.co/v1/internal/frontend-assignment](https://api.quicksell.co/v1/internal/frontend-assignment).
 
 ## Features
 
@@ -10,18 +10,26 @@ This React JS application interacts with the API available at [https://api.quick
 - Allows saving the user's view state in local storage.
 - Priority levels are categorized as Urgent (4), High (3), Medium (2), Low (1), and No Priority (0).
 
+## Usage
+
+1. Press the "display" button to retrieve and showcase the tickets from the given API.  
+
+2. Choose one of the three grouping options: "By Status," "By User," or "By Priority."  
+
+3. Select your preferred sorting option: "Priority" or "Title."  
+
+4. The board will automatically update to reflect your selections.  
+
+5. The application will remember your view settings, allowing you to return to your preferred configuration even after a page reload.
+
 
 ## Tech Stacks
-- **HTML:** A markup language used for structuring the quiz page.  
-- **CSS:** A styling language that enhances the visual aesthetics of the application.  
-- **JavaScript:** A programming language utilized for developing an interactive and dynamic quiz experience.  
-- **React.js:** A JavaScript library for building user interfaces, enabling efficient and reusable component-based architecture.  
+- **HTML:**, **CSS:**, **JavaScript:**, **React.js:** 
 
 
 ## Demo
 
-You can see a live demo of the application [here](https://quicksell-assignment-zeta-self.vercel.app/).
-
+You can see a live demo of the application [here](https://quick-sell-oa-ce21b016-f00y6q46u-anshulagrawal45s-projects.vercel.app/).
 
 
 ## Installation
@@ -35,7 +43,7 @@ To run this application locally, follow these steps:
 
 2. Navigate to the project directory:
     ```bash
-    cd Quicksell-Frontend-Assignment
+    cd Quicksell-OA
     ```
 
 3. Install the required dependencies:
@@ -46,17 +54,4 @@ To run this application locally, follow these steps:
     ```bash
     npm start
     ```
-5. Open your web browser and visit http://localhost:3000 to use the application.
-
-
-## Usage
-
-1. Press the "display" button to retrieve and showcase the tickets from the given API.  
-
-2. Choose one of the three grouping options: "By Status," "By User," or "By Priority."  
-
-3. Select your preferred sorting option: "Priority" or "Title."  
-
-4. The board will automatically update to reflect your selections.  
-
-5. The application will remember your view settings, allowing you to return to your preferred configuration even after a page reload.  
+5. Open your web browser and visit http://localhost:3000 to use the application.  

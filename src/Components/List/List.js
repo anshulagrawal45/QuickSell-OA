@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './ListComponent.css';
-import Card from '../CardComponent/CardComponent';
+import Card from '../Card/Card';
 
 export default function List({ ticketDetails, listTitle, groupValue, priorityList }) {
   const [cardCount, setCardCount] = useState(0);
