@@ -10,21 +10,9 @@ This React JS application interacts with the API available at [https://api.quick
 - Allows saving the user's view state in local storage.
 - Priority levels are categorized as Urgent (4), High (3), Medium (2), Low (1), and No Priority (0).
 
-## Usage
-
-1. Press the "display" button to retrieve and showcase the tickets from the given API.  
-
-2. Choose one of the three grouping options: "By Status," "By User," or "By Priority."  
-
-3. Select your preferred sorting option: "Priority" or "Title."  
-
-4. The board will automatically update to reflect your selections.  
-
-5. The application will remember your view settings, allowing you to return to your preferred configuration even after a page reload.
-
 
 ## Tech Stacks
-- **HTML:**, **CSS:**, **JavaScript:**, **React.js:** 
+- **HTML**, **CSS**, **JavaScript**, **React.js** 
 
 
 ## Demo
